@@ -77,6 +77,14 @@ Support
 </div>
 </nav>
 </div>
+<div class="flex items-center space-x-4">
+<a href="#" class="hidden md:block bg-white text-primary border border-primary px-5 py-2 !rounded-button font-medium hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Access Web Version</a>
+<a href="#" class="bg-primary text-white px-5 py-2 !rounded-button font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">Get Started</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</div>
 </header>
 <!-- Hero Section -->
 <section class="pt-24 relative overflow-hidden">
@@ -587,7 +595,7 @@ const estimatedReturns = document.getElementById('estimated-returns');
 function calculateReturns() {
 const amount = parseFloat(investmentAmount.value) || 0;
 const months = parseFloat(timePeriod.value) || 0;
-const annualRate = 0.15; // 8% annual return
+const annualRate = 0.15; // 15% annual return
 const returns = amount * (Math.pow(1 + annualRate/12, months) - 1);
 estimatedReturns.textContent = `$${returns.toFixed(2)}`;
 }
