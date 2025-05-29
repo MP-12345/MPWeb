@@ -364,10 +364,10 @@
         <p class="text-lg text-gray-600 mb-8 max-w-lg">Access your finances on the go with our mobile apps, web platform, or local download. Your financial freedom is just a click away.</p>
         
         <!-- Mobile App Downloads -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
           <!-- iOS App Store -->
           <div class="relative">
-            <a href="#" class="flex items-center bg-black text-white px-4 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+            <a href="#" class="flex items-center bg-black text-white px-4 py-3 rounded-lg">
               <i class="ri-apple-fill text-2xl mr-3"></i>
               <div>
                 <p class="text-xs">Download on the</p>
@@ -379,7 +379,7 @@
           
           <!-- Google Play Store -->
           <div class="relative">
-            <a href="#" class="flex items-center bg-black text-white px-4 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+            <a href="#" class="flex items-center bg-black text-white px-4 py-3 rounded-lg">
               <i class="ri-google-play-fill text-2xl mr-3"></i>
               <div>
                 <p class="text-xs">Get it on</p>
@@ -388,133 +388,42 @@
             </a>
             <div class="absolute -top-2 -right-2 bg-primary text-white text-xs px-2 py-1 rounded-full">Coming Soon</div>
           </div>
-          
-          <!-- APKPure -->
-          <div class="relative">
-            <a href="https://apkpure.com/miraklepay" target="_blank" rel="noopener noreferrer" class="flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-3 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:scale-105">
-              <img src="https://image.winudf.com/v2/image1/Y29tLmFwa3B1cmUuYWVnb25faWNvbl8xNTUzNTczNzI5XzA2Mw/icon.png?w=170&fakeurl=1" alt="APKPure" class="w-6 h-6 mr-3 rounded">
-              <div>
-                <p class="text-xs">Download from</p>
-                <p class="text-sm font-semibold">APKPure</p>
-              </div>
-            </a>
-            <div class="absolute -top-2 -right-2 bg-green-400 text-white text-xs px-2 py-1 rounded-full">Available</div>
-          </div>
         </div>
-        
-        <!-- Alternative Access Options -->
-        <div class="space-y-4">
-          <h3 class="text-lg font-semibold text-gray-800 mb-3">Other Ways to Access MiraklePay</h3>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <!-- Web Version -->
-            <a href="https://app.miraklepay.com" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors whitespace-nowrap flex items-center justify-center group">
-              <i class="ri-global-line mr-2 group-hover:scale-110 transition-transform"></i>
-              Access Web Version
-            </a>
-            
-            <!-- Direct Download -->
-            <a href="https://download.miraklepay.com/miraklepay-latest.apk" download="miraklepay-latest.apk" class="bg-white text-gray-800 border border-gray-300 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors whitespace-nowrap flex items-center justify-center group">
-              <i class="ri-download-2-line mr-2 group-hover:scale-110 transition-transform"></i>
-              Download Directly
-            </a>
-            
-            <!-- APKPure Alternative Link -->
-            <a href="https://apkpure.com/search?q=miraklepay" target="_blank" rel="noopener noreferrer" class="bg-green-50 text-green-700 border border-green-200 px-6 py-3 rounded-lg font-medium hover:bg-green-100 transition-colors whitespace-nowrap flex items-center justify-center group">
-              <img src="https://image.winudf.com/v2/image1/Y29tLmFwa3B1cmUuYWVnb25faWNvbl8xNTUzNTczNzI5XzA2Mw/icon.png?w=170&fakeurl=1" alt="APKPure" class="w-4 h-4 mr-2 rounded group-hover:scale-110 transition-transform">
-              Find on APKPure
-            </a>
-          </div>
-        </div>
-        
-        <!-- Download Info -->
-        <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <div class="flex items-start">
-            <i class="ri-information-line text-blue-600 text-lg mr-2 mt-0.5"></i>
-            <div class="text-sm text-blue-800">
-              <p class="font-medium mb-1">Download Options:</p>
-              <ul class="space-y-1 text-xs">
-                <li>• <strong>APKPure:</strong> Safe, verified APK downloads</li>
-                <li>• <strong>Direct Download:</strong> Latest version from our servers</li>
-                <li>• <strong>Web Version:</strong> Full features in your browser</li>
-                <li>• <strong>App Stores:</strong> Coming soon for iOS and Android</li>
-              </ul>
+
+        <!-- APKPure Download -->
+        <div class="mb-6">
+          <a href="" target="_blank" rel="noopener noreferrer" class="flex items-center bg-green-500 text-white px-6 py-4 rounded-lg hover:bg-green-600 transition-colors">
+            <div class="bg-white rounded-lg p-2 mr-4">
+              <img src="https://static.apkpure.com/www/static/imgs/logo_v2.png" alt="APKPure" class="w-8 h-8" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              <div style="display:none;" class="w-8 h-8 bg-green-600 rounded flex items-center justify-center text-white font-bold text-sm">APK</div>
             </div>
-          </div>
+            <div class="flex-1">
+              <p class="text-sm">Available on</p>
+              <p class="text-lg font-semibold">APKPure</p>
+            </div>
+            <div class="bg-green-400 text-green-900 text-xs px-3 py-1 rounded-full font-medium">Available Now</div>
+          </a>
+        </div>
+        
+        <!-- Other Download Options -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors flex items-center justify-center">
+            <i class="ri-global-line mr-2"></i>
+            Access Web Version
+          </a>
+          <a href="" download="miraklepay-latest.apk" class="bg-white text-gray-800 border border-gray-300 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center justify-center">
+            <i class="ri-download-2-line mr-2"></i>
+            Download Directly
+          </a>
         </div>
       </div>
       
-      <!-- Mobile App Preview -->
       <div class="w-full md:w-1/2 flex justify-center">
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="MiraklePay Mobile App - Fintech Wallet and Payment Platform" class="max-w-full h-auto rounded-xl shadow-2xl" style="max-height: 500px;">
-          
-          <!-- Floating Download Badges -->
-          <div class="absolute -bottom-4 -left-4 bg-white p-3 rounded-lg shadow-lg">
-            <div class="flex items-center space-x-2">
-              <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span class="text-xs font-medium text-gray-700">Available on APKPure</span>
-            </div>
-          </div>
-          
-          <div class="absolute -top-4 -right-4 bg-primary text-white p-3 rounded-lg shadow-lg">
-            <div class="text-center">
-              <div class="text-xs">Download</div>
-              <div class="text-lg font-bold">FREE</div>
-            </div>
-          </div>
-        </div>
+        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="MiraklePay Mobile App - Fintech Wallet and Payment Platform" class="max-w-full h-auto rounded-xl shadow-2xl" style="max-height: 500px;">
       </div>
     </div>
   </div>
 </section>
-
-<style>
-/* Custom animations and hover effects */
-.download-option {
-  transition: all 0.3s ease;
-}
-
-.download-option:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* APKPure specific styling */
-.apkpure-button {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-}
-
-.apkpure-button:hover {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
-}
-
-/* Responsive adjustments */
-@media (max-width: 640px) {
-  .grid-cols-1.sm\\:grid-cols-2.lg\\:grid-cols-3 {
-    grid-template-columns: 1fr;
-  }
-  
-  .flex.flex-col.sm\\:flex-row {
-    flex-direction: column;
-  }
-}
-
-/* Loading animation for coming soon badges */
-@keyframes pulse-glow {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
-.coming-soon-badge {
-  animation: pulse-glow 2s infinite;
-}
-</style>
 
 <!-- International Transfer Section -->
 <section id="international" class="py-16 bg-gradient-to-br from-primary/5 to-blue-50/30">
